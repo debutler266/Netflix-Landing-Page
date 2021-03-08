@@ -206,6 +206,11 @@ header .logo img {
   opacity: 0;
 }
 
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .trailer video {
 max-width: 950px;
 outline: none
@@ -217,5 +222,63 @@ outline: none
   right: 30px;
   cursor: pointer;
   filter: invert(1);
-  max-width: 32px;
+  max-width: 30px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+
+  .navigation {
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner {
+    padding: 100px 50px
+  }
+
+  .banner .play {
+    left: 50px;
+    font-size: 1.1em;
+  }
+
+  .play img {
+    margin-right: 10px;
+    max-width: 40px;
+  }
+
+  .trailer video {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 566px) {
+
+  header {
+    padding: 20px;
+  }
+
+  .search {
+    position: relative;
+    width: calc(100% - 20px);
+    height: 40px;
+  }
+
+  .banner {
+    padding: 220px 20px 120px;
+  }
+
+  .play {
+    left: 20px;
+    font-size: 1.1em;
+    bottom: 30px;
+  }
 }
