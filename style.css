@@ -36,6 +36,13 @@ header .logo img {
   color: #f1f1f1;
 }
 
+.navigation li:hover {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: red;
+  cursor: pointer;
+}
+
 .navigation li a {
   color: #ffffff;
   text-decoration: none;
@@ -107,6 +114,10 @@ header .logo img {
   max-width: 550px;
 }
 
+.movieTitle {
+  max-width: 200px;
+}
+
 .banner .content h4 {
   color: #1095e8;
   font-weight: 600;
@@ -115,6 +126,12 @@ header .logo img {
 .banner .content h4 span {
   padding: 0 10px;
   border-right: 1px solid rgba(255, 255, 2555, 0.5);
+}
+
+.banner .content h4 span:hover {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: red;
 }
 
 .banner .content h4 span:first-child {
@@ -136,7 +153,7 @@ header .logo img {
 
 .banner .content p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5em;
   color: #ffffff;
   margin: 10px 0 20px;
